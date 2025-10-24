@@ -1,0 +1,14 @@
+{
+  "name": "math-tests",
+  "version": "1.0.0",
+  "description": "Unit tests with Jest",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Твоё Имя",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

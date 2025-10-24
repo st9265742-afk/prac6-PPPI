@@ -1,0 +1,62 @@
+openapi: 3.0.0
+info:
+  title: Math API
+  version: 1.0.0
+  description: API для демонстрації підсумовування та множення чисел
+
+paths:
+  /sum:
+    post:
+      summary: Підсумовування двух чисел
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                a:
+                  type: number
+                  example: 2
+                b:
+                  type: number
+                  example: 3
+      responses:
+        '200':
+          description: Успішний результат
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: number
+                    example: 5
+
+  /multiply:
+    post:
+      summary: Множення двух чисел
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                a:
+                  type: number
+                  example: 4
+                b:
+                  type: number
+                  example: 3
+      responses:
+        '200':
+          description: Успішний результат
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: number
+                    example: 12
